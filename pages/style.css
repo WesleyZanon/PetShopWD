@@ -3,9 +3,12 @@ a{
     font-family: Menco;
 }
 
-#inner{
+.carousel-inner {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 92vh;
+    width: 50vh;
+
+}
+
+.carousel-inner img{
+
 }

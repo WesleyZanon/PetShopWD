@@ -8,9 +8,7 @@
     <link rel="shortcut  icon" href="../../pages//petshop.svg">
     <link rel="stylesheet" href="../../style/global.css">
     <link rel="stylesheet" href="style.css">
-
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
@@ -44,13 +42,134 @@
     
                 <div class="searchHeader">
                     <input type="text" class="searchText" placeholder="Search..."/>
-                    <button type="submite" class="buttonSearch">Search</button>
+                    <button type="button" class="buttonSearch">Search</button>
                 </div>
-                
-
-            
-            
         </div>
+
+
+
+        <div class="carrousel">
+
+            <div id="landing-carrossel" class="carousel slide" data-bs-ride="carousel" style="max-width: 30%; height: 50%; display: flex;">
+
+                <!-- Indicadores das imagens-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#landing-carrossel" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#landing-carrossel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#landing-carrossel" data-bs-slide-to="2"></button>
+                </div>
+              
+                <!-- Imagens-->
+                <div class="carousel-inner" id="inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/images/petshopDog.jpg" alt="Doguinho" class="d-block w-100 cover">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 style="color: black;">Conheça o melhor Petshop do Brasil</h5>
+                      <p style="color: black;">Com mais de 35 unidades espalhadas pelo país.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/cat.jpg" alt="Gatin" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 style="color: black;">Cuidamos com carinho de quem acompanha você</h5>
+                      <p style="color: black;">Profissionais treinados e com certificação.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/guinea-pig.jpg" alt="Cueio" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 style="color: black;">Suporte e atendimento ao cliente 24 horas</h5>
+                      <p style="color: black;">Desde tele compras até atendimento veterinário.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#landing-carrossel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#landing-carrossel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+
+        </div>
+
+        
+        <div class="timetable">
+            <div class="container mt-3" id="horarios">
+                <h2>Horários e Atendimentos</h2>
+                <p>Os horários de atendimento podem sofrer mudanças em feriados.</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Serviço</th>
+                      <th>Profissional</th>
+                      <th>Horário</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Banho/Tosa</td>
+                      <td>Marcos Almeida e Mônica Tavares</td>
+                      <td>8:00 - 16:00</td>
+                    </tr>      
+                    <tr>
+                      <td>Atendimento veterinário</td>
+                      <td>Dra. Elianna</td>
+                      <td>12:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                      <td>Adestramento de Cães</td>
+                      <td>Fabrício Rodrigues</td>
+                      <td>8:00 - 12:00</td>
+                    </tr>
+                    <tr >
+                      <td>Adestramento de Gatos</td>
+                      <td>Jane Pimentel</td>
+                      <td>8:00 - 12:00</td>
+                    </tr>
+                    <tr >
+                      <td>Hotel de Cães</td>
+                      <td>Lilian e Vinicius</td>
+                      <td>8:00 - 16:00</td>
+                    </tr>
+                    <tr >
+                      <td>Hotel de Gatos</td>
+                      <td>Lilian e Vinicius</td>
+                      <td>8:00 - 16:00</td>
+                    </tr>
+                    <tr class="table">
+                      <td>Loja vitual</td>
+                      <td>-</td>
+                      <td>Disponível em todos os horários</td>
+                    </tr>
+                    <tr class="table">
+                      <td>Plantão Emergência veterinária</td>
+                      <td>Dr. Willian</td>
+                      <td>20:00 - 4:00</td>
+                    </tr>
+                    <tr class="table">
+                      <td>Plantão Emergência veterinária</td>
+                      <td>Dra. Beatriz</td>
+                      <td>4:00 - 12:00</td>
+                    </tr>
+                    <tr class="table">
+                      <td>Atendimento por telefone</td>
+                      <td>(xx)xxxxx-xxxx</td>
+                      <td>Disponível em todos os horários</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+        </div>
+
+        <div class="footer">
+
+
+        </div>
+
 
     </div>
     

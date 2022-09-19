@@ -1,0 +1,15 @@
+.HomePageHomeContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.timetable{
+    background-color: var(--gray);
+}
+
+.carrousel{
+
+    background-color: var(--gray);
+}

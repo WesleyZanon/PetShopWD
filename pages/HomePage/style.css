@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--gray);
 }
 
 .timetable{
@@ -12,4 +13,11 @@
 .carrousel{
 
     background-color: var(--gray);
+}
+
+.HomePageTitle{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 60px;
 }

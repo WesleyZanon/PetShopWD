@@ -1,0 +1,151 @@
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;   
+    margin: -1vh; 
+}
+
+.principal  > img{
+
+    width: 100vw;
+    height: 100%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 12px 9px 25px -3px rgba(0,0,0,0.21); 
+box-shadow: 0px 10px 13px -7px #000000, 12px 9px 25px -3px rgba(0,0,0,0.21);
+    
+}
+
+.world-pet{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--fundo)
+    
+}
+
+.world-pet-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 10vh;
+    align-items: center;
+}
+
+.world-pet-text > h1{
+    font-size: 50px;
+}
+
+.world-pet-text > p{
+    font-size: 20px;
+}  
+
+.world-pet-text-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 10vh;
+}
+
+.world-pet-text-buttons > button{
+    background-color: rgb(0, 173, 9);
+    color: white;
+    border: 2px solid rgb(0, 85, 0);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 4px 12px 3px rgba(0,0,0,0.33); 
+box-shadow: 0px 10px 13px -7px #000000, 3px 4px 12px 3px rgba(0,0,0,0.33);
+}
+
+
+
+.world-pet-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.world-pet-img > img{
+    height: 80%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 4px 12px 3px rgba(0,0,0,0.33); 
+    box-shadow: 0px 10px 13px -7px #000000, 3px 4px 12px 3px rgba(0,0,0,0.33);
+}
+
+.services{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.services .title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.services .imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services .imgs .img{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 30%;
+    margin-top: 20vh;
+    align-items: center;
+    
+}
+.services .imgs .img img{
+    width: 60%;
+}
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.clients img{
+    width: 90%;
+    margin-top: 10vh;
+}
+
+.conquest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20vh;
+}
+
+.conquest .imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+.conquest .imgs .img{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+
+.conquest .imgs .img img{
+    width: 60%;
+}

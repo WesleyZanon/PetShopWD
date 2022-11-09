@@ -5,17 +5,11 @@ html{
 @font-face {
     font-family: 'FredokaOne';
     src: url('./FredokaOne-Regular.ttf') format('truetype');
-
 }
 
 body{
     font-family: 'FredokaOne';
-    overflow-x:hidden;
-    overflow-y: scroll;
-    background-color: var(--fundo);
-    
 }
-
 
 button, a:hover{
     cursor:pointer;

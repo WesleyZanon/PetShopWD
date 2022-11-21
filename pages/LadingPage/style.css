@@ -118,3 +118,7 @@ pointer-events: all;
 .scrollFade--animate {
 transition: opacity 1.0s ease-in-out;
 }
+
+.tab{
+ font-family: Arial, Helvetica, sans-serif;
+}

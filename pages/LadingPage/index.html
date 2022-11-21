@@ -1,66 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Import bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- Nosso CSS e JS files-->
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Ladding Page</title>
+    <script type="text/javascript" src="../../pages/LadingPage/script.js"></script>
+
+    <!--Importando fontes-->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    
+<!--First Section-->
+    <div
+    class="bg-image"
+    style="
+      background-image: url('../../assets/images/cat 1.svg');
+      height: 100vh;
+      background-position: center;
+      background-size: cover;"
+      >
+        <!--Nav Menu-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-*">	 
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+            <img src="../../assets/icons/logo.svg" width="60" alt="">
+            </a>
+            <h2 style="margin-top: 5vh; color: black; margin-left: -12px;">World Pet</h2>
 
-    <div class="HomeContainer">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="principal">
+            <ul class="navbar-nav ml-auto" id="menu-font">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-right: 30px;">SERVIÇOS</a>
+                </li>
 
-            <img src="../../assets/images/cat 1.svg">
+                <li class="nav-item">
+                <a class="nav-link" href="./horarios.html" style="padding-right: 30px;">HORARIOS</a>
+                </li>
 
-                <div class="header">
-                    <div class="logo">
-                        <img src="../../assets/icons/logo.svg">
-                        <h1>World Pet</h1>
-                    </div>
+                <li class="nav-item">
+                <a class="nav-link" href="#" style="padding-right: 30px;">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        
 
-                    <div class="links">
-                        <a>SERVIÇOS</a>
-                        <a>HORARIOS</a>
-                        <a>CONTATO</a>
-                    </div >  
-            </div>
-        </div>
-
-
-        <div class="world-pet">
+    <!--Second Section-->
+    <div style="height: 100vh;">
+        <div class="d-flex justify-content-center">
             
             <div class="world-pet-text">
-                <h1>A World Pet</h1>
+                <h1 style="color: #45822F;">A World Pet</h1>
 
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                    Aldus PageMaker including versions of Lorem Ipsum.
+                <p class="text-lg-start" style="margin-top: 5vh;">
+                    A World Pet é uma franquia de Pet Shops brasileira.<br>
+                    Fundada em 2002 para atender com muito carinho você e seu bichinho.<br>
+                    Prezamos pela qualidade e excelência de nossos produtos,<br>
+                    e temos a qualificação necessária para de cuidar de quem você mais ama.<br><br>
+
+                    Contamos com uma equipe especializada com biólogos, veterinários e zootecnistas<br>
+                    que realizam o controle de qualidade em todas as nossas unidades.<br>
+                    Acompanhe nossas parcerias com ONGs locais para os pets que não encontraram um lar
+                    <span id="vazio">...</span>
+                    <span id="more"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</span>
                 </p>
                 
                 <div class="world-pet-text-buttons">
-                    <button>Comprar</button>
-                    <button>Leia mais</button>
+                    <button id= "myBtn" onclick="mostrarLeiaMais()">Leia mais</button>
                 </div>
 
             </div>
 
             <div class="world-pet-img">
-                <img src="../../assets/images/veterinarian 1.svg" >
+                <img src="../../assets/images/veterinarian 1.svg" style="width: 60vh; margin-top: 10vh;" >
+            </div>
+
+        </div>
+    </div>
+    <!--Third Section-->
+    <div style="height: 90vh;  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) )">
+        <div class="d-flex justify-content-center">
+            <div class="world-pet-text">
+                <h2 style="color: #45822F;">NOSSOS SERVIÇOS</h3>
+                    <div class="text-center">
+                        <p>cuidando com carinho dos nossos melhores amigos</p>
+                    </div>
             </div>
 
         </div>
 
-
+        <div class="d-flex justify-content-around">
+            <!--First Image-->
+            <div>
+                <img src="../../assets/images/dog-bath.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
+                <h4 class="text-center" style="padding-top: 30px;">Banho e tosa</h4>
+            </div>
+            <!--Second Image-->
+            <div>
+                <img src="../../assets/images/cat-vet.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
+                <h4 class="text-center" style="padding-top: 30px;">Vacinação</h4>
+            </div>
+            <!--Third Image-->
+            <div>
+                <img src="../../assets/images/dog-trainer.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
+                <h4 class="text-center" style="padding-top: 30px;">Adestramento</h4>
+            </div>
+        </div>
     </div>
-    
+
+    <!--Fourth Section-->
+    <div style="margin-bottom: 10vh;">
+        <div class="d-flex justify-content-center" style="margin-top: 10vh; ">
+            <div class="p-2">
+                <h1 style="color: #45822F;">NOSSOS CLIENTES</h1>
+            </div>
+        </div>
+        <div class="text-center">
+            <p>confira nossa galeria</p>
+        </div>
+        
+            <!--Gallery-->
+            <div class="container">
+
+            
+                <hr class="mt-2 mb-5">
+            
+                <div class="row text-center text-lg-start">
+            
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/dog.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/dog.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/coelho.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/coelho.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/peixe.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/peixe.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/hamster.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/hamster.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/dog2.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/dog2.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/gato2.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/gato2.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/gato3.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/gato3.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                    <a href="../../assets/images/image-gallery/dog4.jpg" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="../../assets/images/image-gallery/dog4.jpg" alt="">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--Fourth Section-->
+    <div style="height: 90vh;  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) )">
+        <div class="d-flex justify-content-center">
+            <div class="world-pet-text">
+                <h3 style="color: #45822F;">NOSSAS CONQUISTAS</h3>
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <!--First Image-->
+            <div class="text-center">
+                <img src="../../assets/images/icons/badge-green.png" class="text-center" style="height: 20vh"></img>
+                <p class="text-center" style="padding-top: 1.0em">Temos o maior número<br>de avaliações positivas<br>dentro do ramo veterinário<br>pelo Google Análise</p>
+            </div>
+            <!--Second Image-->
+            <div class="text-center">
+                <img src="../../assets/images/icons/heart-green.png" class="text-center" style="height: 22vh;"></img>
+                <p class="text-center">Atendemos mais de<br>1.000 clientes diariamente<br>em 3 estados diferentes</p>
+            </div>
+            <!--Third Image-->
+            <div class="text-center">
+                <img src="../../assets/images/icons/trophy-green.png" class="shadow-4-strong" style="height: 20vh; color: #45822F;"></img>
+                <p class="text-center" style="padding-top: 0.5em">Eleito pela terceira vez<br>como melhor petshop<br>no estado de São Paulo<br>para animais domésticos<br>pela revista Pet</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #21D192"
+               >
+        <!-- Left -->
+        <div class="me-3">
+          <span>Conecte-se a nossas redes sociais:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div class="d-flex flex-row-reverse">
+        
+            <div class="p-1">
+                <a href="" class="text-white me-4">
+                    <img src="../../assets/images/icons/whatsapp.png" style="height: 25px; padding-right: 30px;">
+                    <i class="fab fa-whats"></i>
+                </a>
+            </div>
+
+            <div class="p-1">
+                <a href="" class="text-white me-4">
+                    <img src="../../assets/images/icons/instagram.png" style="height: 25px; padding-right: 12px">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="p-1">
+                <a href="" class="text-white me-4">
+                    <img src="../../assets/images/icons/facebook.png" style="height: 25px; padding-right: 10px">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">World Pet</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                    Cuidando com carinho<br>de quem você mais ama!
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Links</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Serviços</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Horários</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Contato</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> Av Lorem Ipsum - SP</p>
+              <p><i class="fas fa-envelope mr-3"></i> contato@worldpet.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-dark" href=""
+           >WorldPet</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
 </body>
 </html>

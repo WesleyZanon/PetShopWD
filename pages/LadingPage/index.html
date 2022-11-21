@@ -3,7 +3,7 @@
 <head>
     <!--Meta Tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Import bootstrap css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,11 +31,10 @@
         <!--Nav Menu-->
         <nav class="navbar navbar-expand-sm navbar-light bg-*">	 
             <!--Logo-->
-            <a class="navbar-brand" href="#">
-            <img src="../../assets/icons/logo.svg" width="60" alt="">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../../assets/icons/logo.svg" width="60" alt="" style="margin-top: -30px;">
+                <h2 style="display: inline-block; margin-top: 3vh; color: black; max-height: min-content;">World Pet</h2>
             </a>
-            <h2 style="margin-top: 5vh; color: black; margin-left: -12px;">World Pet</h2>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,13 +57,13 @@
         
 
     <!--Second Section-->
-    <div style="height: 100vh;">
+    <div id="secondDiv" style="height: 110vh;" class="scrollFade">
         <div class="d-flex justify-content-center">
             
-            <div class="world-pet-text">
+            <div class="world-pet-text" style="margin-top: 3em">
                 <h1 style="color: #45822F;">A World Pet</h1>
 
-                <p class="text-lg-start" style="margin-top: 5vh;">
+                <p class="text-lg-start" style="margin-top: 1em;">
                     A World Pet é uma franquia de Pet Shops brasileira.<br>
                     Fundada em 2002 para atender com muito carinho você e seu bichinho.<br>
                     Prezamos pela qualidade e excelência de nossos produtos,<br>
@@ -74,7 +73,7 @@
                     que realizam o controle de qualidade em todas as nossas unidades.<br>
                     Acompanhe nossas parcerias com ONGs locais para os pets que não encontraram um lar
                     <span id="vazio">...</span>
-                    <span id="more"><br>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</span>
+                    <span id="more"><br>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
                 </p>
                 
                 <div class="world-pet-text-buttons">
@@ -89,14 +88,14 @@
 
         </div>
     </div>
+    <FadeInSection>
     <!--Third Section-->
-    <div style="height: 90vh;  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) )">
+    <div style="height: 90vh;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../assets/images/puppies-bg.jpg);
+    background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0% 25%; ">
         <div class="d-flex justify-content-center">
             <div class="world-pet-text">
-                <h2 style="color: #45822F;">NOSSOS SERVIÇOS</h3>
-                    <div class="text-center">
-                        <p>cuidando com carinho dos nossos melhores amigos</p>
-                    </div>
+                <h2 style="color: #ffffff;">NOSSOS SERVIÇOS</h3>
             </div>
 
         </div>
@@ -105,21 +104,21 @@
             <!--First Image-->
             <div>
                 <img src="../../assets/images/dog-bath.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
-                <h4 class="text-center" style="padding-top: 30px;">Banho e tosa</h4>
+                <h4 class="text-center" style="padding-top: 30px; color: white;">Banho e tosa</h4>
             </div>
             <!--Second Image-->
             <div>
                 <img src="../../assets/images/cat-vet.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
-                <h4 class="text-center" style="padding-top: 30px;">Vacinação</h4>
+                <h4 class="text-center" style="padding-top: 30px; color: white">Vacinação</h4>
             </div>
             <!--Third Image-->
             <div>
                 <img src="../../assets/images/dog-trainer.jpg" class="rounded-circle shadow-4-strong" style="width: 40vh; height:40vh; margin-top: -40px;"></img>
-                <h4 class="text-center" style="padding-top: 30px;">Adestramento</h4>
+                <h4 class="text-center" style="padding-top: 30px; color: white">Adestramento</h4>
             </div>
         </div>
     </div>
-
+    </FadeInSection>
     <!--Fourth Section-->
     <div style="margin-bottom: 10vh;">
         <div class="d-flex justify-content-center" style="margin-top: 10vh; ">
@@ -184,7 +183,7 @@
         </div>
 
     <!--Fourth Section-->
-    <div style="height: 90vh;  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) )">
+    <div style="height: 75vh;  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) )">
         <div class="d-flex justify-content-center">
             <div class="world-pet-text">
                 <h3 style="color: #45822F;">NOSSAS CONQUISTAS</h3>
@@ -210,9 +209,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
     <!-- Footer -->

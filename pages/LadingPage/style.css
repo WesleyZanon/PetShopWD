@@ -97,5 +97,24 @@ box-shadow: 0px 10px 13px -7px #000000, 3px 4px 12px 3px rgba(0,0,0,0.33);
     transition: 0.3s;
   }
   
-  .img-fluid:hover {opacity: 0.7;}
-  
+.img-fluid:hover {opacity: 0.7;}
+
+
+.scrollFade {
+opacity: 1;
+pointer-events: all;
+}
+
+.scrollFade--hidden {
+opacity: 0;
+pointer-events: none;
+}
+
+.scrollFade--visible {
+opacity: 1;
+pointer-events: all;
+}
+
+.scrollFade--animate {
+transition: opacity 1.0s ease-in-out;
+}
